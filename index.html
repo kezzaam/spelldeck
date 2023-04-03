@@ -1,0 +1,86 @@
+<!-- Witches and Wizards Spelldeck -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spelldeck</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Link to external javascript file -->
+  <script defer src="js/index.js"></script>
+
+  <!-- Bootstrap JS link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome CSS -->
+  <script src="https://kit.fontawesome.com/4fdabc1d3b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div id="splash-container">
+
+    <!-- navigation -->
+    <nav>
+      <h2>Witches and Wizards</h2>
+      <h1 class="splash">Spelldeck
+        <span>Spelldeck</span>
+        <span>Spelldeck</span>
+        <span>
+          <!-- animated book -->
+          <div class='book'>
+            <div class='inner'>
+              <div class='left'></div>
+              <div class='middle'></div>
+              <div class='right'></div>
+              <ul id="book-pages"></ul>
+            </div>
+          </div>
+        </span>
+      </h1>
+
+    </nav>
+
+    <!-- Custom modal -->
+    <div class="modal fade" id="not-muggle-modal" tabindex="-1" aria-labelledby="not-muggle-modal-label"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="fa-solid fa-m fa-beat-fade"></i>
+            <h5 class="modal-title" id="not-muggle-modal-label">Ministry of Magic</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="not-muggle-checkbox">
+              <label class="form-check-label" for="not-muggle-checkbox">
+                I am not a muggle
+              </label>
+              <i class="fa-solid fa-lock"></i>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Um... What?</button>
+            <button type="button" class="btn btn-primary" id="not-muggle-confirm">Alohomora!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
